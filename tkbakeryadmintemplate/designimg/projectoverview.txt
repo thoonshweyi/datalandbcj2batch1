@@ -1,0 +1,5 @@
+1.top/left nav bar
+2.quick info
+3.foodmenu+ recentorder
+4.newcustomer + recent activities
+5.best-seller-progress + add menu

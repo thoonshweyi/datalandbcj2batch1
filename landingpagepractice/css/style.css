@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+
+body{
+    font-family: 'Mulish', sans-serif;
+    overflow-x: hidden;
+}
+/* START NAV BAR */
+.navbar .nav-link{
+    font-size: 14px;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+.navbar .nav-link.active{
+    border-left: 2px solid #fff;
+}
+/* END NAV BAR */
+
+
+/* START SHOWCASE SLIDER SECTION */
+.carousel-item{
+    height: 450px;
+}
+.carouselimages1{
+    background-image: linear-gradient(rgba(0,0,0,0) , rgba(0,0,0,0.5)) , url('../assets/img/etc/cover1.jpg');
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-size: cover;
+}
+.carouselimages2{
+    background-image: linear-gradient(rgba(0,0,0,0) , rgba(0,0,0,0.5)) , url('../assets/img/etc/cover2.jpg');
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-size: cover;
+}
+.carouselimages3{
+    background-image: linear-gradient(rgba(0,0,0,0) , rgba(0,0,0,0.5)) , url('../assets/img/etc/cover3.jpg');
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-size: cover;
+}
+/* END SHOWCASE SLIDER SECTION */
+
+/* START HOME HEADING SECTION */
+#homeheading{
+    height: 200px;
+
+    background-image: url('../assets/img/etc/background.jpg');
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-attachment: fixed;
+
+    position: relative;
+}
+.darkoverlays{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* END HOME HEADING SECTION */
+
+/* START VIDEO SECTION */
+#videosection{
+    height: 200px;
+
+    background-image: url('../assets/img/etc/background.jpg');
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-attachment: fixed;
+    background-position: 0 -100px;
+
+    position: relative;
+}
+/* END VIDEO SECTION */

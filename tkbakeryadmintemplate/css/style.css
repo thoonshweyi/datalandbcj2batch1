@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+
+body{
+    font-family: 'Mulish', sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+a{
+    text-decoration: none;
+}
+/* Start Left Side Bar */
+
+.leftsidebars{
+    background-color: rgba(47, 60, 78, 1);
+    height: 100vh;
+}
+.navbar-brand{
+    color: rgba(44, 141, 238, 1) !important;
+}
+.borderbottoms{
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+.sidebarlinks{
+    padding: 15px 0;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+.sidebarlinks.currents{
+    color: rgba(44, 141, 238, 1) !important;
+}
+.sidebarlinks:hover{
+    background-color: rgba(44, 141, 238, 0.3);
+}
+/* End Left Side Bar */
+@media (max-width:760px) {
+    .leftsidebars{
+        /* height: auto; */
+        position: static;
+    }
+    .topsidebars{
+        position: static;
+    }
+}
+/* Start Top Side Bar */
+.topsidebars{
+    background-color: #fff;
+}
+.breadcrumb a{
+    color: #666;
+}
+.searchinputs{
+    padding-left: 80px;
+    background-color: #f2f2f2;
+    border: none;
+
+    position: relative;
+}
+.searchinputs:focus{
+    box-shadow: none;
+    background-color: #f2f2f2;
+    border: 1px solid rgba(44, 141, 238, 1)
+}
+.searchicons{
+    color: #777;
+    font-size: 18px;
+
+    position: relative;
+
+}
+.searchicons::before{
+    content: '\f002';
+    font-family: 'Font Awesome 5 Pro';
+
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.searchicons::after{
+    content: '|';
+    color: rgba(0, 0, 0, 0.4);
+
+    position: absolute;
+    top: 50%;
+    left: 60px;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.dots{
+    position: relative;   
+    /* background-color: rosybrown; */
+}
+.dots::before{
+    content: '';
+    width: 5px;
+    height: 5px;
+    background-color: rgba(44, 141, 238, 1);
+    border-radius: 50%; 
+
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+}
+/* End Top Side Bar */
+
+/* START QUICK INFO SECTION */
+
+.infoboxes{
+    background-color: rgba(47, 60, 78, 1);
+    color: #999;
+
+    transition: all 0.5s;
+}
+.infoboxes:hover{
+    box-shadow: 0px 5px 10px rgba(47, 60, 78, 1);
+    transform: translateY(-3px);
+}
+/* END QUICK INFO SECTION */
+
+/* Start Pagination */
+.cpagination{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+}
+.cpage-link{
+    width: 30px;
+    height: 30px;
+    /* background-color: tomato; */
+    color: #777;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cpage-link:hover{
+    background-color: #fff;
+    color: #777;
+}
+.cpage-link.curs{
+    border: 2px solid rgba(44, 141, 238, 1);
+}
+/* End Pagination */
+
+/* START FOOD MENU AND RECENT ORDER */
+.image-containers{
+    width: 120px;
+    height: 80px;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: bold;
+
+    position: relative;
+}
+.image-containers::before{
+    content: 'Processed';
+    /* width: 70%; */
+    height: 30px;
+    background-color: green;
+    color: #fff;
+    padding: 0 10px;
+    border-radius: 20px;
+
+
+    position: absolute;
+    top: 5px;
+    right: -10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-containers.onholds::before{
+    content: 'onhold';
+    background-color:rgba(44, 141, 238, 1);
+}
+.image-containers img{
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+
+    border-radius: 10px;
+}
+/* END FOOD MENU AND RECENT ORDER */
+
+/* START NEW CUSTOMER AND RECENT ACTIVITIES*/
+.customercards{
+    background-color: rgba(47, 60, 78, 1);
+    color: rgba(44, 141, 238, 1);
+}
+.followbtns{
+    color: #eee;
+    /* background-color: tomato; */
+    padding: 5px 30px;
+    border-radius: 20px;
+    border: 1px solid #eee;
+}
+.times{
+    position: relative;
+}
+.times::before{
+    content: '';
+    width: 4px;
+    height: 100%;
+    background-color: rgba(44, 141, 238, 1);
+
+    position: absolute;
+    top: 50%;
+    right: -20px;
+
+    transform: translateY(-50%);
+}
+/* END NEW CUSTOMER AND RECENT ACTIVITIES*/
+
+/* START PROGRESS AND ADD FOOD MENU */
+.addfoodcards{
+    height: 450px;
+    background-color: rgba(47, 60, 78, 1);
+
+    position: relative;
+}
+.addfoodforms{
+    width: 80%;
+    background-color: #fff;
+    padding: 20px;
+
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%);
+}
+/* END PROGRESS AND ADD FOOD MENU */
